@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html style="height:100%;">
+<title>Mappiamo BO</title>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="height:100%;">
+
+<div class="w3-bar w3-indigo" style="">
+  <button class="w3-bar-item w3-button" onclick="openTab('Mappa')">Mappa</button>
+  <button class="w3-bar-item w3-button" onclick="openTab('Form')">Form</button>
+</div>
+
+<div id="Mappa" class="w3-container w3-light-blue tab" style="height:100%; padding:0; display:none">
+  <iframe sandbox="allow-forms allow-scripts " style="width:100%; height:100%; padding-top:10px;" src="https://umap.openstreetmap.fr/it/map/mappiamobo_194853?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&searchControl=true&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=undefined&captionBar=false&fullscreenControl=true&locateControl=true"></iframe>
+</div>
+
+<div id="Form" class="w3-container tab" style="height:100%; padding:0; display:block">
+  <iframe sandbox="allow-forms allow-scripts " style="width:100%; height:100%;" src="https://ona.io/lorenzo_perone/50895/271675/webform"></iframe>
+</div>
+
+<script>
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(tabName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
